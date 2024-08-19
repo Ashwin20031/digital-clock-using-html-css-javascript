@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "New Amsterdam", sans-serif;
+
+}
+
+body {
+    background-image: url("./asset/pexels-kaip-1341279.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: moveBackground 50s backwards infinite;
+}
+
+@keyframes moveBackground {
+
+100% {
+    background-position: 0px -400%;
+    }
+}
+
+.clock-wrapper {
+    background: linear-gradient(145deg, #080808, #1c2833);
+    border-radius: 10rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+.time-display {
+    color: #ecf0f1;
+    font-size: 4rem;
+    width: 10rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 20px;
+}
+
+.date-display {
+    color: #bdc3c7;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
